@@ -1,0 +1,20 @@
+{
+   "navHome": "Home",
+   "navRecipes": "Recipes",
+   "navContact": "Contact",
+   "navLang": "Language",
+
+   "recipeIngredients": "Ingredients",
+   "recipeDirections": "Directions",
+   "servings": "servings",
+
+   "searchAll": "Search All Recipes: ",
+   "noRecipeCombo": "No recipes available with that combination. Please try again.",
+   "filter": "filter: ",
+   "searchFiltered": "search filtered recipes",
+
+   "all": "All",
+   "method": "Method: ",
+   "season": "Season: ",
+   "mainIng": "Main Ingredient: "
+}

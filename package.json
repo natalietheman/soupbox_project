@@ -1,0 +1,86 @@
+{
+  "name": "soupbox",
+  "version": "0.1.0",
+  "homepage": "/",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.10.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "emailjs-com": "^2.6.3",
+    "little-state-machine": "^3.1.1",
+    "material-ui-image": "^3.2.3",
+    "react": "^16.13.1",
+    "react-aspect-ratio": "^1.0.42",
+    "react-async": "^10.0.1",
+    "react-dom": "^16.13.1",
+    "react-hook-form": "^6.6.0",
+    "react-image-masonry": "^0.4.0",
+    "react-imgix": "^9.0.2",
+    "react-photo-gallery": "^8.0.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-select": "^3.1.0",
+    "tailwindcss-aspect-ratio": "^3.0.0"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
+    "watch": "tailwind build src/styles/index.css -o src/styles/tailwind.css --watch",
+    "start": "npm run build:style && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "autoprefixer": "^9.8.6",
+    "babel-eslint": "^10.1.0",
+    "commitizen": "^4.1.2",
+    "cz-customizable": "^6.3.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "postcss-cli": "^7.1.1",
+    "prettier": "2.0.5",
+    "tailwindcss": "^1.7.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  }
+}

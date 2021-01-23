@@ -1,0 +1,20 @@
+{
+   "navHome": "主頁",
+   "navRecipes": "食譜",
+   "navContact": "聯絡我們",
+   "navLang": "與議案",
+
+   "recipeIngredients": "材料: ",
+   "recipeSteps": "步骤: ",
+   "servings": "份量",
+
+   "searchAll": "搜寻食譜: ",
+   "noRecipeCombo": "沒有食譜。再試過一次。",
+   "filter": "進階搜索:",
+   "searchFiltered": "搜寻食譜",
+
+   "all": "全部",
+   "method": "煲法: ",
+   "season": "季節: ",
+   "mainIng": "主菜: "
+}
